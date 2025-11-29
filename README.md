@@ -43,4 +43,4 @@ You must have **Python 3.x** installed. The application uses the following libra
 Execute the Python script from your terminal:
 
 ```bash
-python comic_downloader.py
+python comic.py
