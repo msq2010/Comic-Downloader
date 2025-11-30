@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Comic Downloader</title>
+    <!-- Load Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f7fafc;
+        }
+    </style>
+</head>
+<body class="antialiased min-h-screen flex items-center justify-center p-4">
+
+    <!-- Main Content Card -->
+    <div class="max-w-3xl w-full bg-white shadow-2xl rounded-xl p-8 md:p-12 border border-gray-100 transform hover:scale-[1.01] transition duration-300 ease-in-out">
+        <header class="text-center mb-10">
+            <h1 class="text-4xl font-extrabold text-gray-900 mb-2 sm:text-5xl">
+                Web Comic Downloader
+            </h1>
+            <p class="text-xl text-indigo-600 font-medium">
+                Get your favorite webcomics for offline reading.
+            </p>
+        </header>
+
+        <section class="mb-10 space-y-6 text-gray-700">
+            <p class="text-lg leading-relaxed">
+                This utility provides a simple Graphical User Interface (GUI) built with Python to download entire archives of supported webcomics, saving them directly to your local machine for convenient offline access.
+            </p>
+            
+            <h2 class="text-2xl font-semibold text-gray-800 border-b pb-2 mb-4">
+                How to Get Started
+            </h2>
+
+            <ol class="list-none space-y-4 text-left">
+                <li class="flex items-start">
+                    <span class="flex-shrink-0 w-8 h-8 rounded-full bg-indigo-500 text-white font-bold flex items-center justify-center mr-3">1</span>
+                    <div class="flex-grow">
+                        <p class="font-medium text-lg">Download the Script</p>
+                        <p class="text-gray-600">Click the button below to visit the GitHub repository where you can find and download the <code>comic_downloader.py</code> file.</p>
+                    </div>
+                </li>
+                <li class="flex items-start">
+                    <span class="flex-shrink-0 w-8 h-8 rounded-full bg-indigo-500 text-white font-bold flex items-center justify-center mr-3">2</span>
+                    <div class="flex-grow">
+                        <p class="font-medium text-lg">Install Dependencies</p>
+                        <p class="text-gray-600">Ensure you have Python installed and install any required libraries (check the GitHub repository README for details, usually using a command like <code>pip install requirements.txt</code>).</p>
+                    </div>
+                </li>
+                <li class="flex items-start">
+                    <span class="flex-shrink-0 w-8 h-8 rounded-full bg-indigo-500 text-white font-bold flex items-center justify-center mr-3">3</span>
+                    <div class="flex-grow">
+                        <p class="font-medium text-lg">Run the App</p>
+                        <p class="text-gray-600">Execute the script from your terminal: <code>python comic_downloader.py</code>. The GUI window will open, allowing you to select your comic and download range.</p>
+                    </div>
+                </li>
+            </ol>
+        </section>
+
+        <!-- Download Button Linking to GitHub -->
+        <div class="mt-10 text-center">
+            <a href="https://github.com/msq2010/Comic-Downloader" 
+               target="_blank" 
+               rel="noopener noreferrer"
+               class="inline-flex items-center justify-center px-8 py-4 border border-transparent text-lg font-bold rounded-lg shadow-lg text-white bg-indigo-600 hover:bg-indigo-700 transition duration-150 ease-in-out transform hover:scale-[1.05] focus:outline-none focus:ring-4 focus:ring-indigo-500 focus:ring-opacity-50">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 mr-3" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+                </svg>
+                Go to GitHub Repository
+            </a>
+            <p class="mt-4 text-sm text-gray-500">You will be redirected to the source code on GitHub.</p>
+        </div>
+    </div>
+</body>
+</html>
